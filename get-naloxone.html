@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get Naloxone — Naloxone Advocates</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/index.html"><span class="brand-dot"></span><span class="brand-text"><span class="brand-name">Naloxone</span><span class="brand-sub">Advocates</span></span></a>
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About Us</a>
+        <a href="/training.html">Training & P2P</a>
+        <a class="active" href="/get-naloxone.html">Get Naloxone</a>
+        <a href="/volunteer.html">Volunteer</a>
+        <a href="/resources.html">Resources</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <button class="cart-btn" id="openCartBtn">🛒 <span class="cart-badge" id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container split">
+      <div class="card">
+        <div class="tag tag-lime">Request a kit</div>
+        <h2 class="mt-12">Get naloxone</h2>
+        <p class="muted">This form submits to Netlify Forms. Turn on notifications to receive emails.</p>
+
+        <form name="kit-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="checkout">
+          <input type="hidden" name="form-name" value="kit-request" />
+          <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+
+          <div class="field">
+            <label>Name</label>
+            <input name="name" required placeholder="Full name" />
+          </div>
+
+          <div class="field">
+            <label>Email</label>
+            <input name="email" required type="email" placeholder="Email" />
+          </div>
+
+          <div class="field">
+            <label>Phone (optional)</label>
+            <input name="phone" placeholder="Phone" />
+          </div>
+
+          <div class="field">
+            <label>Notes</label>
+            <textarea name="notes" placeholder="Where should we deliver / any notes?"></textarea>
+          </div>
+
+          <button class="btn btn-pink" type="submit">Submit request</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <div class="tag tag-blue">Prefer training?</div>
+        <h2 class="mt-12">Book a session</h2>
+        <p class="muted">Training covers overdose signs, response steps, and naloxone administration.</p>
+        <a class="btn btn-blue" href="/training.html">Book training</a>
+        <div class="mt-12"><button class="btn btn-outline" data-open-cart>Open cart</button></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
