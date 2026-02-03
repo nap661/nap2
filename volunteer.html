@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Volunteer — Naloxone Advocates</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/index.html"><span class="brand-dot"></span><span class="brand-text"><span class="brand-name">Naloxone</span><span class="brand-sub">Advocates</span></span></a>
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About Us</a>
+        <a href="/training.html">Training & P2P</a>
+        <a href="/get-naloxone.html">Get Naloxone</a>
+        <a class="active" href="/volunteer.html">Volunteer</a>
+        <a href="/resources.html">Resources</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <button class="cart-btn" id="openCartBtn">🛒 <span class="cart-badge" id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container split">
+      <div class="card">
+        <div class="tag tag-pink">Volunteer</div>
+        <h2 class="mt-12">Join the team</h2>
+        <p class="muted">Sign up below — this submits to Netlify Forms.</p>
+
+        <form name="volunteer" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="checkout">
+          <input type="hidden" name="form-name" value="volunteer" />
+          <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+
+          <div class="field"><label>Name</label><input name="name" required /></div>
+          <div class="field"><label>Email</label><input name="email" type="email" required /></div>
+          <div class="field"><label>Phone (optional)</label><input name="phone" /></div>
+          <div class="field">
+            <label>Preferred role</label>
+            <input name="role" placeholder="Outreach / Peer trainer / Events / Other" />
+          </div>
+          <div class="field"><label>Message</label><textarea name="message"></textarea></div>
+          <button class="btn btn-pink" type="submit">Send</button>
+        </form>
+      </div>
+
+      <div class="quote-card">
+        <div class="quote">“Volunteering gave me community, purpose, and the chance to help people who get ignored.”</div>
+        <div class="quote-who">
+          <div class="avatar">VN</div>
+          <div>
+            <div class="fw-900">Volunteer</div>
+            <div class="muted tiny">Plymouth</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
