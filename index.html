@@ -40,67 +40,127 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="pill">NALOXONE SAVES LIVES</div>
-          <h1>Peer-led harm reduction in Plymouth & Devon.</h1>
-          <p class="muted">
-            We provide stigma-free naloxone training, kit distribution, and peer-to-peer support.
-            Book training sessions online — add to cart, checkout, and we’ll confirm your place.
-          </p>
+  <!-- HERO (Screenshot layout) -->
+<section class="section top-hero">
+  <div class="container hero-grid">
 
-          <div class="hero-actions">
-            <a class="btn btn-pink" href="/training.html">Book training</a>
-            <a class="btn btn-outline" href="/get-naloxone.html">Request a kit</a>
-            <button class="btn btn-blue" data-open-cart>View cart</button>
-          </div>
+    <!-- Left big hero card -->
+    <div class="hero-card hero-left">
+      <h1>Saving Lives<br/>Through<br/>Community Action</h1>
+      <p>Free naloxone training and kits for Plymouth and Devon communities</p>
 
-          <div class="hero-stats">
-            <div class="stat">
-              <div class="stat-num">150+</div>
-              <div class="stat-label">Lives saved</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">2000+</div>
-              <div class="stat-label">Kits distributed</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">Weekly</div>
-              <div class="stat-label">Training sessions</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <div class="hero-card-top">
-            <div class="tag tag-blue">Upcoming training</div>
-            <div class="tag tag-green">£20</div>
-          </div>
-
-          <h3 class="mt-12">Community Naloxone Training</h3>
-          <ul class="meta">
-            <li>📅 15 Feb 2026</li>
-            <li>🕙 10:00 AM</li>
-            <li>📍 Plymouth Community Centre</li>
-          </ul>
-
-          <button
-            class="btn btn-yellow btn-full js-add"
-            data-id="sess-1502"
-            data-title="Community Naloxone Training"
-            data-date="15 Feb 2026"
-            data-time="10:00 AM"
-            data-location="Plymouth Community Centre"
-            data-price="20"
-          >🛒 Add to cart</button>
-
-          <p class="tiny muted mt-10">
-            Checkout sends your booking to Netlify Forms + Google Sheets (if connected).
-          </p>
-        </div>
+      <div class="hero-actions">
+        <a class="btn btn-pink" href="/training.html">Book Free Training →</a>
+        <a class="btn btn-outline" href="/get-naloxone.html">Request Naloxone Kit →</a>
       </div>
-    </section>
+    </div>
+
+    <!-- Right blue photo card -->
+    <div class="hero-card hero-right">
+      <div class="hero-photo" aria-label="Training photo"></div>
+      <div class="hero-icons">
+        <span class="bubble yellow">💊</span>
+        <span class="bubble pink">👥</span>
+        <span class="bubble green">💚</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Stats bar (Screenshot layout) -->
+<section class="stats-bar">
+  <div class="container stats-grid">
+    <div class="stat">
+      <div class="stat-num">500+</div>
+      <div class="stat-label">People Trained</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">1,200+</div>
+      <div class="stat-label">Naloxone Kits Distributed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">150+</div>
+      <div class="stat-label">Lives Saved</div>
+    </div>
+  </div>
+</section>
+
+<!-- Upcoming Training Sessions (Screenshot layout) -->
+<section class="section upcoming" id="upcoming">
+  <div class="container center">
+    <span class="pill pill-pink">Book Now</span>
+    <h2 class="up-title">Upcoming Training Sessions</h2>
+    <p class="up-sub">Choose a session that works for you and add it to your booking cart</p>
+
+    <div class="up-grid">
+
+      <article class="session-card">
+        <div class="session-top">
+          <span class="tag tag-blue">Community Training</span>
+          <span class="tag tag-green">Free</span>
+        </div>
+
+        <ul class="session-meta">
+          <li>📅 <strong>15 Feb 2025</strong></li>
+          <li>🕙 <strong>10:00 AM</strong></li>
+          <li>📍 Plymouth Community Centre</li>
+        </ul>
+
+        <button class="btn btn-cart add-to-cart"
+          data-id="training-community-15feb2025"
+          data-name="Community Training — 15 Feb 2025 (10:00)"
+          data-price="0">
+          🛒 Add to Cart
+        </button>
+      </article>
+
+      <article class="session-card">
+        <div class="session-top">
+          <span class="tag tag-blue">Peer-to-Peer (P2P)</span>
+          <span class="tag tag-green">Free</span>
+        </div>
+
+        <ul class="session-meta">
+          <li>📅 <strong>22 Feb 2025</strong></li>
+          <li>🕑 <strong>2:00 PM</strong></li>
+          <li>📍 Devonport Guildhall</li>
+        </ul>
+
+        <button class="btn btn-cart add-to-cart"
+          data-id="training-p2p-22feb2025"
+          data-name="Peer-to-Peer (P2P) — 22 Feb 2025 (2:00)"
+          data-price="0">
+          🛒 Add to Cart
+        </button>
+      </article>
+
+      <article class="session-card">
+        <div class="session-top">
+          <span class="tag tag-blue">Organisational Training</span>
+          <span class="tag tag-green">Free</span>
+        </div>
+
+        <ul class="session-meta">
+          <li>📅 <strong>1 Mar 2025</strong></li>
+          <li>🕘 <strong>9:00 AM</strong></li>
+          <li>📍 Your Workplace</li>
+        </ul>
+
+        <button class="btn btn-cart add-to-cart"
+          data-id="training-org-1mar2025"
+          data-name="Organisational Training — 1 Mar 2025 (9:00)"
+          data-price="0">
+          🛒 Add to Cart
+        </button>
+      </article>
+
+    </div>
+
+    <a class="btn btn-blue-outline up-more" href="/training.html">View All Training Options →</a>
+  </div>
+</section>
+
 <section class="section band-green">
   <div class="container center">
     <h2>Free Naloxone Training Programs</h2>
