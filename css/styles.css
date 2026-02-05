@@ -843,3 +843,25 @@ h2{font-size:30px;margin:0 0 18px}
 .section.band-purple .card * { color: #111; }    /* everything inside cards */
 .section.band-purple .card .muted { color: rgba(0,0,0,.65); }
 .section.band-purple .link { color: #2f6fe7; font-weight: 700; }
+/* --- FIX: Upcoming Training cards should be white --- */
+
+.section.upcoming {
+  background: #f7f9fc; /* light neutral section background */
+}
+
+.section.upcoming .session-card {
+  background: #ffffff;
+  color: #111;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.section.upcoming .session-card p,
+.section.upcoming .session-card li {
+  color: #333;
+}
+
+/* Make sure tags stay coloured */
+.section.upcoming .tag {
+  color: #fff;
+}
