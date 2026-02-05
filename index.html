@@ -9,8 +9,37 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css" />
 <header class="site-header">
-  <div class="container nav" id="siteHeaderInner"></div>
+  <div class="container nav">
+    <a class="brand" href="/index.html" aria-label="Home">
+      <span class="brand-dot"></span>
+      <span class="brand-text">
+        <span class="brand-name">Naloxone</span>
+        <span class="brand-sub">Advocates</span>
+      </span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a class="active" href="/index.html">Home</a>
+      <a href="/about.html">About Us</a>
+      <a href="/training.html">Training & P2P</a>
+      <a href="/get-naloxone.html">Get Naloxone</a>
+      <a href="/locations.html">Pickup Locations</a>
+      <a href="/request-kit.html">Request a Kit</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/volunteer.html">Volunteer</a>
+      <a href="/resources.html">Resources</a>
+      <a href="/contact.html">Contact</a>
+      <a class="btn btn-primary btn-sm" href="/request-kit.html">Request a Kit Now</a>
+    </nav>
+
+    <button class="cart-btn" id="openCartBtn" aria-label="Open cart">
+      🛒 <span class="cart-badge" id="cartCount">0</span>
+    </button>
+  </div>
 </header>
+
 
 
   <main>
@@ -556,9 +585,39 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<script src="/js/include.js"></script>
-<script src="/js/app.js"></script>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/index.html" aria-label="Home">
+      <span class="brand-dot"></span>
+      <span class="brand-text">
+        <span class="brand-name">Naloxone</span>
+        <span class="brand-sub">Advocates</span>
+      </span>
+    </a>
 
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a class="active" href="/index.html">Home</a>
+      <a href="/about.html">About Us</a>
+      <a href="/training.html">Training & P2P</a>
+      <a href="/get-naloxone.html">Get Naloxone</a>
+      <a href="/locations.html">Pickup Locations</a>
+      <a href="/request-kit.html">Request a Kit</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/volunteer.html">Volunteer</a>
+      <a href="/resources.html">Resources</a>
+      <a href="/contact.html">Contact</a>
+      <a class="btn btn-primary btn-sm" href="/request-kit.html">Request a Kit Now</a>
+    </nav>
+
+    <button class="cart-btn" id="openCartBtn" aria-label="Open cart">
+      🛒 <span class="cart-badge" id="cartCount">0</span>
+    </button>
+  </div>
+</header><script src="/js/app.js"></script>
 </body>
 </html>
+
+
 
