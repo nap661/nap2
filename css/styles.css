@@ -406,5 +406,103 @@ a{color:inherit;text-decoration:none}
   .nav-links.open{display:flex}
   .menu-btn{display:inline-flex}
 }
+/* ===============================
+   FINAL OVERRIDES (homepage bands)
+   Paste at VERY END of styles.css
+   =============================== */
+
+/* Upcoming training: white section + white cards */
+.section.upcoming{
+  background:#fff !important;
+}
+.section.upcoming .up-title,
+.section.upcoming .up-sub{
+  color:#111 !important;
+}
+.section.upcoming .session-card{
+  background:#fff !important;
+  color:#111 !important;
+  border:1px solid rgba(0,0,0,.06) !important;
+}
+.section.upcoming .session-meta li{
+  color:#111 !important;
+  opacity:.9 !important;
+}
+
+/* Keep tag colours */
+.section.upcoming .tag.tag-blue{ background:#3b82f6 !important; color:#fff !important; }
+.section.upcoming .tag.tag-green{ background:#84cc16 !important; color:#0b1b05 !important; }
+
+/* Naloxone Training Programs (lime band + white cards) */
+.section.band-green{
+  background:#a3e635 !important;
+  color:#111 !important;
+}
+.section.band-green h2{
+  color:#fff !important;
+}
+.section.band-green .card{
+  background:#fff !important;
+  color:#111 !important;
+}
+
+/* Join Our Community (purple gradient band, readable cards + text) */
+.section.band-purple{
+  background: linear-gradient(135deg,#ec4899 0%, #8b5cf6 55%, #3b82f6 100%) !important;
+  color:#fff !important;
+}
+.section.band-purple h2{
+  color:#fff !important;
+}
+.section.band-purple p,
+.section.band-purple .muted{
+  color:rgba(255,255,255,.85) !important;
+}
+.section.band-purple .card{
+  background:#fff !important;
+  color:#111 !important;
+}
+.section.band-purple .card p,
+.section.band-purple .card h3{
+  color:#111 !important;
+}
+.section.band-purple .link{
+  color:#2563eb !important;
+  font-weight:800 !important;
+}
+
+/* Community Voices (blue band + WHITE cards) */
+.section.band-blue{
+  background:#3b82f6 !important;
+  color:#fff !important;
+}
+.section.band-blue h2{
+  color:#fff !important;
+}
+.section.band-blue .card{
+  background:#fff !important;
+  color:#111 !important;
+  border:0 !important;
+}
+.section.band-blue .card p,
+.section.band-blue .card strong,
+.section.band-blue .card h3{
+  color:#111 !important;
+}
+.section.band-blue .card .muted{
+  color:#4b5563 !important;
+}
+.section.band-blue .stars{
+  color:#fbbf24 !important;
+}
+
+/* Footer: blue band (like screenshot) */
+footer.footer{
+  background: linear-gradient(180deg, #2563eb, #1e40af) !important;
+  color:#fff !important;
+}
+footer.footer .footer-muted{ color:rgba(255,255,255,.85) !important; }
+footer.footer a{ color:rgba(255,255,255,.9) !important; }
+footer.footer a:hover{ color:#fff !important; }
 
 
