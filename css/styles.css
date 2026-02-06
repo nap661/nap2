@@ -410,3 +410,11 @@ a{color:inherit;text-decoration:none}
   .nav-links.open{display:flex}
   .menu-btn{display:inline-flex}
 }
+/* === FINAL FOOTER BADGE FIX === */
+footer.footer .badge{
+  background:#facc15 !important;
+  color:#111 !important;
+  padding:14px 18px !important;
+  border-radius:14px !important;
+  font-weight:900 !important;
+}
