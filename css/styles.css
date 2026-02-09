@@ -9,13 +9,17 @@
   --blue2:#1d4ed8;
   --green:#22c55e;
   --lime:#a3e635;
-  --purple:#8b5cf6;
 
   --radius:22px;
 }
 
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:#f8fafc}
+html,body{
+  margin:0;padding:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--text);
+  background:#f8fafc;
+}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 .container{max-width:1120px;margin:0 auto;padding:0 18px}
@@ -31,11 +35,6 @@ a{color:inherit;text-decoration:none}
 /* =========================
    HEADER / NAV
    ========================= */
-.brand-logo{
-  height: 42px;
-  width: auto;
-  display: block;
-}
 .site-header{
   background:var(--yellow);
   position:sticky;top:0;z-index:50;
@@ -48,12 +47,18 @@ a{color:inherit;text-decoration:none}
 .brand-name{font-weight:900}
 .brand-sub{font-weight:800;font-size:12px;opacity:.8}
 
-.menu-btn{display:none;border:0;background:rgba(255,255,255,.35);padding:10px 12px;border-radius:12px;font-weight:900;cursor:pointer}
+.menu-btn{
+  display:none;border:0;background:rgba(255,255,255,.35);
+  padding:10px 12px;border-radius:12px;font-weight:900;cursor:pointer
+}
 .nav-links{display:flex;align-items:center;gap:14px;flex:1;justify-content:center}
 .nav-links a{font-weight:800;opacity:.92}
 .nav-links a.active{text-decoration:underline;text-underline-offset:3px}
 
-.cart-btn{border:0;background:rgba(255,255,255,.35);padding:10px 12px;border-radius:12px;font-weight:900;cursor:pointer}
+.cart-btn{
+  border:0;background:rgba(255,255,255,.35);
+  padding:10px 12px;border-radius:12px;font-weight:900;cursor:pointer
+}
 .cart-badge{
   display:inline-flex;align-items:center;justify-content:center;
   min-width:22px;height:22px;margin-left:6px;border-radius:999px;
@@ -61,7 +66,7 @@ a{color:inherit;text-decoration:none}
 }
 
 /* =========================
-   BUTTONS / CHIPS
+   BUTTONS / TAGS
    ========================= */
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
@@ -85,8 +90,6 @@ a{color:inherit;text-decoration:none}
 }
 .tag-blue{background:#3b82f6;color:#fff}
 .tag-green{background:#84cc16;color:#0b1b05}
-.tag-pink{background:#ff4fa3;color:#fff}
-.tag-purple{background:#8b5cf6;color:#fff}
 
 /* =========================
    SECTIONS / CARDS
@@ -102,7 +105,6 @@ a{color:inherit;text-decoration:none}
 .cards{display:grid;gap:18px}
 .cards.two{grid-template-columns:repeat(2,minmax(0,1fr))}
 .cards.three{grid-template-columns:repeat(3,minmax(0,1fr))}
-
 @media(max-width:900px){
   .cards.two,.cards.three{grid-template-columns:1fr}
 }
@@ -167,7 +169,7 @@ a{color:inherit;text-decoration:none}
 /* =========================
    UPCOMING (white cards)
    ========================= */
-.section.upcoming{background:#f7f9fc;padding-top:26px;padding-bottom:42px}
+.section.upcoming{background:#fff;padding-top:26px;padding-bottom:42px}
 .pill.pill-pink{
   display:inline-block;padding:10px 18px;border-radius:999px;
   background:var(--pink);color:#fff;font-weight:900;
@@ -211,8 +213,6 @@ a{color:inherit;text-decoration:none}
 /* =========================
    BANDS (match screenshots)
    ========================= */
-
-/* Training programmes (lime) */
 .section.band-green{
   background:var(--lime);
   padding:72px 0;
@@ -220,7 +220,6 @@ a{color:inherit;text-decoration:none}
 .section.band-green h2{color:#fff;text-align:center;font-weight:900}
 .section.band-green .card{background:#fff;color:#111;border:0}
 
-/* Join community (purple gradient) */
 .section.band-purple{
   background:linear-gradient(135deg, #ec4899 0%, #8b5cf6 55%, #3b82f6 100%);
   color:#fff;
@@ -235,7 +234,6 @@ a{color:inherit;text-decoration:none}
 .section.band-purple .card .muted{color:#4b5563}
 .section.band-purple .link{color:#2563eb;font-weight:900}
 
-/* Community voices (blue band + white cards) */
 .section.band-blue{
   background:#3b82f6;
   color:#fff;
@@ -249,7 +247,6 @@ a{color:inherit;text-decoration:none}
 .section.band-blue .card .muted{color:#4b5563}
 .section.band-blue .stars{color:#fbbf24}
 
-/* Ready to make a difference (lime band) */
 .section.band-lime{
   background:#b7d11a;
   padding:72px 0;
@@ -257,7 +254,7 @@ a{color:inherit;text-decoration:none}
 }
 
 /* =========================
-   MISC HOMEPAGE COMPONENTS
+   HOME COMPONENTS
    ========================= */
 .icon-circle{
   width:56px;height:56px;border-radius:50%;
@@ -271,6 +268,7 @@ a{color:inherit;text-decoration:none}
 .ticks{list-style:none;padding:0;margin:14px 0 18px;text-align:left}
 .ticks li{margin:10px 0;position:relative;padding-left:24px;color:#0f172a}
 .ticks li::before{content:"✓";position:absolute;left:0;top:0;color:var(--pink);font-weight:900}
+.btn.wide{display:block;width:100%}
 
 .how-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;text-align:left}
 @media(max-width:900px){.how-grid{grid-template-columns:1fr}}
@@ -297,21 +295,25 @@ a{color:inherit;text-decoration:none}
 .news-meta{display:flex;gap:10px;align-items:center;margin-bottom:10px}
 
 .review-head{display:flex;gap:12px;align-items:center;margin-bottom:10px}
-.avatar-badge{
-  display:inline-grid;
-  place-items:center;
-  width:42px;
-  height:42px;
-  border-radius:50%;
-  font-weight:900;
+.badge{
+  display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;
+  font-weight:900
 }
-.avatar-badge.yellow{background:var(--yellow);color:#111}
-.avatar-badge.green{background:var(--green);color:#111}
-.avatar-badge.pink{background:var(--pink);color:#fff}
-.avatar-badge.blue{background:var(--blue);color:#fff}
+.badge.yellow{background:var(--yellow);color:#111}
+.badge.green{background:var(--green);color:#111}
+.badge.pink{background:var(--pink);color:#fff}
+.badge.blue{background:var(--blue);color:#fff}
+
+.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.social{display:flex;gap:12px;justify-content:center}
+.social-btn{
+  width:44px;height:44px;border-radius:50%;
+  display:grid;place-items:center;background:#fff;color:#111;
+  text-decoration:none;font-weight:900
+}
 
 /* =========================
-   FOOTER (blue like screenshot)
+   FOOTER (deep navy + yellow badge)
    ========================= */
 .footer{
   background:#0f1a2b;
@@ -323,7 +325,8 @@ a{color:inherit;text-decoration:none}
 @media(max-width:900px){.footer-grid{grid-template-columns:1fr}}
 .footer-muted{color:rgba(255,255,255,.75);max-width:48ch}
 .footer-links{display:grid;gap:10px;color:rgba(255,255,255,.9)}
-.footer-links a:hover{color:#fff}
+.footer a{color:rgba(255,255,255,.9)}
+.footer a:hover{color:#fff}
 .footer-form{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
 .footer-form input{
   padding:12px 12px;border-radius:14px;
@@ -366,6 +369,7 @@ a{color:inherit;text-decoration:none}
   display:flex;align-items:center;justify-content:space-between;gap:12px;
   padding:16px;border-bottom:1px solid var(--line);
 }
+.modal-head-actions{display:flex;gap:10px;align-items:center}
 .icon-btn{
   border:0;background:rgba(2,6,23,.06);
   border-radius:14px;padding:10px 12px;cursor:pointer;font-weight:900
@@ -395,7 +399,6 @@ a{color:inherit;text-decoration:none}
   border:1px solid var(--line);font-weight:650;
 }
 .field textarea{min-height:100px;resize:vertical}
-.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 
 .toast{
   position:fixed;left:50%;bottom:18px;transform:translateX(-50%);
@@ -415,70 +418,4 @@ a{color:inherit;text-decoration:none}
   .nav-links.open{display:flex}
   .menu-btn{display:inline-flex}
 }
-/* === FINAL FOOTER BADGE FIX === */
-footer.footer .badge{
-  background:#facc15 !important;
-  color:#111 !important;
-  padding:14px 18px !important;
-  border-radius:14px !important;
-  font-weight:900 !important;
-}
 
-/* FIX FOOTER "NALOXONE SAVES LIVES" BADGE */
-footer.footer .badge{
-  display:inline-block !important;
-  width:auto !important;
-  height:auto !important;
-
-  padding:14px 22px !important;
-  border-radius:999px !important;
-
-  background:#facc15 !important;
-  color:#111 !important;
-
-  font-weight:900 !important;
-  font-size:14px !important;
-  line-height:1 !important;
-  white-space:nowrap !important;
-}
-/* =========================
-   HERO VIDEO BANNER
-   ========================= */
-
-.hero-video-wrap{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-
-.hero-video{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Dark overlay for readability */
-.hero-video-wrap::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background: linear-gradient(
-    180deg,
-    rgba(0,0,0,.15),
-    rgba(0,0,0,.35)
-  );
-  pointer-events:none;
-}
-/* Footer pill badge (NOT the avatar badges) */
-.footer-badge{
-  display:inline-block;
-  background:#facc15;
-  color:#111;
-  font-weight:900;
-  padding:14px 18px;
-  border-radius:14px;
-  white-space:nowrap;
-}
