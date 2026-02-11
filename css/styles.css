@@ -230,57 +230,35 @@ a{color:inherit;text-decoration:none}
 .cards {
   gap: 30px;
 }
-/* ===== HERO POLISH ===== */
+/* ===== HERO POLISH (tighter + cleaner) ===== */
 
 .top-hero {
-  padding: 120px 0 80px;
-}
-
-.hero-left h1 {
-  font-size: 58px;
-  line-height: 1.05;
-  margin-bottom: 24px;
-}
-
-.hero-left p {
-  font-size: 20px;
-  margin-bottom: 30px;
-  opacity: .85;
-}
-
-.hero-actions {
-  gap: 18px;
+  padding: 70px 0 40px;
 }
 
 .hero-left {
-  border-radius: 28px;
+  padding: 28px;
+  border-radius: 20px;
 }
 
 .hero-card {
-  border-radius: 28px;
-}
-/* ===== HERO POLISH (balanced size) ===== */
-
-.top-hero {
-  padding: 90px 0 60px;
+  border-radius: 20px;
 }
 
 .hero-left h1 {
-  font-size: 48px;
+  font-size: 42px;
   line-height: 1.1;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .hero-left p {
-  font-size: 18px;
-  margin-bottom: 22px;
+  font-size: 17px;
+  margin-bottom: 18px;
   opacity: .9;
 }
 
-.hero-left {
-  border-radius: 24px;
+.hero-left .btn {
+  padding: 10px 16px;
+  font-size: 14px;
 }
 
-.hero-card {
-  border-radius: 24px;
-}
