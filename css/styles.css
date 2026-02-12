@@ -664,6 +664,69 @@ img{max-width:100%;display:block}
   padding-top:24px !important;
   border-top:1px solid rgba(255,255,255,.2);
 }
+/* =========================
+   FINAL OVERRIDES (paste at very bottom of styles.css)
+   ========================= */
+
+/* --- RESOURCES section: icons + button spacing --- */
+.resource-top,
+.resource .resource-top {
+  font-size: 34px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.section .resources,
+.section.resources {
+  padding-bottom: 72px;
+}
+
+.section .btn-pink,
+.section .btn-yellow {
+  border-radius: 999px;
+}
+
+/* "View All Resources" button */
+.section .btn.btn-pink[href*="resources"],
+.section .btn.btn-pink {
+  padding: 14px 22px;
+  font-weight: 900;
+}
+
+/* --- FOOTER: make the yellow "NALOXONE SAVES LIVES" badge BIG like the screenshot --- */
+.footer-bottom {
+  display: block !important;
+  text-align: center;
+}
+
+.footer-bottom .badge {
+  display: block;
+  width: min(720px, 100%);
+  margin: 18px auto 10px;
+  padding: 18px 28px;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: .6px;
+  border-radius: 14px;
+  text-align: center;
+  background: var(--yellow);
+  color: #111;
+}
+
+/* keep © line underneath, small + muted */
+.footer-bottom .tiny {
+  display: block;
+  margin-top: 8px;
+  opacity: .75;
+}
+
+/* --- Mobile polish: keep things roomy but not massive --- */
+@media (max-width: 640px) {
+  .footer-bottom .badge {
+    padding: 16px 18px;
+    font-size: 18px;
+  }
+}
 
 
 
