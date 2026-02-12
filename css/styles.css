@@ -467,6 +467,26 @@ a{color:inherit;text-decoration:none}
   .nav-links.open{display:flex}
   .menu-btn{display:inline-flex}
 }
+/* ===================================================
+   BUTTON COLOUR FIX PACK
+   =================================================== */
+
+/* ---------- HERO BUTTONS ---------- */
+.top-hero .btn-pink{
+  background:#ff4fa3;
+  color:#fff;
+}
+
+.top-hero .btn-outline{
+  background:#fff;
+  border:2px solid #111;
+  color:#111;
+}
+
+
+/* ---------- HOW TO GET NALOXONE ---------- */
+.how-blue .btn-yellow{
+  background:#
 
 
 
