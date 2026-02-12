@@ -721,6 +721,27 @@ img{max-width:100%;display:block}
   font-size: 13px;
   opacity: .7;
 }
+/* FINAL BUTTON FIX — overrides all earlier ones */
+.btn-yellow {
+  background: #facc15 !important;
+  color: #111 !important;
+  border: none !important;
+  font-weight: 900 !important;
+}
+/* FINAL FOOTER BADGE FIX */
+.footer-bottom .badge {
+  width: 100% !important;
+  max-width: 760px !important;
+  margin: 16px auto !important;
+  padding: 20px 28px !important;
+  font-size: 22px !important;
+  font-weight: 900 !important;
+  border-radius: 14px !important;
+  background: #facc15 !important;
+  color: #111 !important;
+  display: block !important;
+  text-align: center !important;
+}
 
 
 
