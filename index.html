@@ -1,580 +1,250 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Naloxone Advocates — Plymouth</title>
+  <title>Naloxone Advocates Plymouth CIC — Community Training</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css?v=2">
-</head>
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https:////fonts.gstatic.com
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+    rel href="!-- Top yellow nav -->
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">Naloxone Advocates</div>
 
-<body>
+      <nav class="navlinks">
+        #aboutAbout</a>
+        <a href="#training&amp; P2P</a>
+        <a href="#volunteer</a>
+        #resourcesResources</a>
+        #newsNews</a>
+        #contactContact</a>
+      </nav>
 
-<header class="site-header">
-  <div class="container nav">
-  <a class="brand" href="/index.html" aria-label="Home">
-<img src="/logo.png" alt="Naloxone Advocates logo" class="logo">
-</a>
-
-
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
-
-    <nav class="nav-links" id="navLinks">
-      <a class="active" href="/index.html">Home</a>
-      <a href="/about.html">About Us</a>
-      <a href="/training.html">Training &amp; P2P</a>
-      <a href="/get-naloxone.html">Get Naloxone</a>
-      <a href="/locations.html">Pickup Locations</a>
-      <a href="/request-kit.html">Request a Kit</a>
-      <a href="/faq.html">FAQ</a>
-      <a href="/volunteer.html">Volunteer</a>
-      <a href="/resources.html">Resources</a>
-      <a href="/contact.html">Contact</a>
-      <a class="btn btn-primary btn-sm" href="/request-kit.html">Request a Kit Now</a>
-    </nav>
-
-    <button class="cart-btn" id="openCartBtn" aria-label="Open cart">
-      🛒 <span class="cart-badge" id="cartCount">0</span>
-    </button>
-  </div>
-</header>
-
-<main>
-
-  <!-- HERO -->
-  <section class="section top-hero">
-    <div class="container hero-grid">
-
-      <div class="hero-card hero-left">
-        <h1>Saving Lives<br/>Through<br/>Community Action</h1>
-        <p>Naloxone training and kits for Plymouth and Devon communities</p>
-
-        <div class="hero-actions">
-          <a class="btn btn-pink" href="/training.html">Book Training →</a>
-          <a class="btn btn-outline" href="/get-naloxone.html">Request Naloxone Kit →</a>
-        </div>
-      </div>
-
-      <div class="hero-card hero-right">
-        <div class="hero-photo" aria-label="Training photo"></div>
-        <div class="hero-icons">
-          <span class="bubble yellow">💊</span>
-          <span class="bubble pink">👥</span>
-          <span class="bubble green">💚</span>
-        </div>
-      </div>
-
+      <!-- Opens cart drawer -->
+      <button id="openCart" class="btn primary">
+        Get Naloxone Now <span id="cartCount" class="badge">0</span>
+      </button>
     </div>
-  </section>
+  </header>
 
-  <!-- STATS BAR -->
-  <section class="stats-bar">
-    <div class="container stats-grid">
-      <div class="stat">
-        <div class="stat-num">500+</div>
-        <div class="stat-label">People Trained</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">1,200+</div>
-        <div class="stat-label">Naloxone Kits Distributed</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">150+</div>
-        <div class="stat-label">Lives Saved</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- UPCOMING TRAINING -->
-  <section class="section upcoming" id="upcoming">
-    <div class="container center">
-      <span class="pill pill-pink">Book Now</span>
-      <h2 class="up-title">Upcoming Training Sessions</h2>
-      <p class="up-sub">Choose a session that works for you and add it to your booking cart</p>
-
-      <div class="up-grid">
-        <article class="session-card">
-          <div class="session-top">
-            <span class="tag tag-blue">Community Training</span>
-            <span class="tag tag-green">Free</span>
+  <main>
+    <!-- Hero (lime/yellow + blue) -->
+    <section class="hero">
+      <div class="container hero-wrap">
+        <div class="hero-left">
+          <h1>Saving Lives Through Community Action</h1>
+          <p>Free naloxone training, overdose response skills and kits for Plymouth and Devon communities.</p>
+          <div class="cta-row">
+            #trainingBook Free Training</a>
+            #howRequest Naloxone Kit</a>
           </div>
-          <ul class="session-meta">
-            <li>📅 <strong>15 Feb 2025</strong></li>
-            <li>🕙 <strong>10:00 AM</strong></li>
-            <li>📍 Plymouth Community Centre</li>
-          </ul>
-          <button class="btn btn-cart add-to-cart"
-            data-id="training-community-15feb2025"
-            data-title="Community Training"
-            data-date="15 Feb 2025"
-            data-time="10:00 AM"
-            data-location="Plymouth Community Centre"
-            data-price="0">
-            🛒 Add to Cart
-          </button>
-        </article>
-
-        <article class="session-card">
-          <div class="session-top">
-            <span class="tag tag-blue">Peer-to-Peer (P2P)</span>
-            <span class="tag tag-green">Free</span>
-          </div>
-          <ul class="session-meta">
-            <li>📅 <strong>22 Feb 2025</strong></li>
-            <li>🕑 <strong>2:00 PM</strong></li>
-            <li>📍 Devonport Guildhall</li>
-          </ul>
-          <button class="btn btn-cart add-to-cart"
-            data-id="training-p2p-22feb2025"
-            data-title="Peer-to-Peer (P2P)"
-            data-date="22 Feb 2025"
-            data-time="2:00 PM"
-            data-location="Devonport Guildhall"
-            data-price="0">
-            🛒 Add to Cart
-          </button>
-        </article>
-
-        <article class="session-card">
-          <div class="session-top">
-            <span class="tag tag-blue">Organisational Training</span>
-            <span class="tag tag-green">Free</span>
-          </div>
-          <ul class="session-meta">
-            <li>📅 <strong>1 Mar 2025</strong></li>
-            <li>🕘 <strong>9:00 AM</strong></li>
-            <li>📍 Your Workplace</li>
-          </ul>
-          <button class="btn btn-cart add-to-cart"
-            data-id="training-org-1mar2025"
-            data-title="Organisational Training"
-            data-date="1 Mar 2025"
-            data-time="9:00 AM"
-            data-location="Your Workplace"
-            data-price="0">
-            🛒 Add to Cart
-          </button>
-        </article>
-      </div>
-
-      <a class="btn btn-blue-outline up-more" href="/training.html">View All Training Options →</a>
-    </div>
-  </section>
-
-  <!-- TRAINING PROGRAMS -->
-  <section class="section band-green">
-    <div class="container center">
-      <h2>Naloxone Training Programs</h2>
-
-      <div class="cards three mt-20">
-        <article class="card program">
-          <div class="icon-circle blue">👥</div>
-          <h3>Community Training</h3>
-          <ul class="ticks">
-            <li>Learn to recognise overdose signs</li>
-            <li>How to administer naloxone safely</li>
-            <li>Naloxone kit provided</li>
-            <li>Certificate of completion</li>
-          </ul>
-          <a class="btn btn-yellow wide" href="/training.html">Learn More</a>
-        </article>
-
-        <article class="card program featured">
-          <div class="icon-circle blue">🤝</div>
-          <h3>Peer-to-Peer (P2P)</h3>
-          <ul class="ticks">
-            <li>Lived-experience led training</li>
-            <li>Stigma-free, supportive environment</li>
-            <li>Ongoing peer support network</li>
-            <li>Community outreach opportunities</li>
-          </ul>
-          <a class="btn btn-yellow wide" href="/training.html">Learn More</a>
-        </article>
-
-        <article class="card program">
-          <div class="icon-circle blue">🏢</div>
-          <h3>Organisational Training</h3>
-          <ul class="ticks">
-            <li>Tailored for workplaces &amp; services</li>
-            <li>Group sessions available</li>
-            <li>Policy guidance included</li>
-            <li>Flexible scheduling options</li>
-          </ul>
-          <a class="btn btn-yellow wide" href="/training.html">Learn More</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW TO GET -->
-  <section class="section">
-    <div class="container center">
-      <h2>How to Get Naloxone</h2>
-
-      <div class="how-grid mt-20">
-        <div class="how-card how-blue">
-          <div class="how-num">1</div>
-          <h3>Book Training</h3>
-          <p>Attend one of our naloxone training sessions. Learn how to recognise an overdose and administer naloxone safely and confidently.</p>
-          <a class="btn btn-yellow" href="/training.html">Book Training</a>
         </div>
 
-        <div class="how-card how-pink">
-          <div class="how-num">2</div>
-          <h3>Get Your Kit</h3>
-          <p>Receive your free naloxone kit at the end of training. You’ll have everything you need to respond to an overdose emergency.</p>
-          <a class="btn btn-blue" href="/get-naloxone.html">Get Your Kit</a>
+        <div class="hero-right">
+          <strong>Follow &amp; Share</strong>
+          <div class="soc">
+            <a</a>
+            <a href="#" aria-labelhref="#" aria-label="Instagram</div>
+      </div>
+    </section>
+
+    <!-- KPI strip -->
+    <section class="container kpi">
+      <div class="row">
+        <div><div class="num">500+</div><div>People Trained</div></div>
+        <div><div class="num">1,200+</div><div>Naloxone Kits Distributed</div></div>
+        <div><div class="num">150+</div><div>Lives Saved</div></div>
+      </div>
+    </section>
+
+    <!-- Training sessions -->
+    <section id="training" class="section">
+      <div class="container">
+        <div class="lead"><span class="chip pink">New this month</span></div>
+        <h2>Upcoming Training Sessions</h2>
+        <p class="lead">Choose a session that works for you and a skill to your liking set!</p>
+        <div id="sessions" class="grid-3"></div>
+        <div class="center-row">#View All Training Options</a></div>
+      </div>
+    </section>
+
+    <!-- About + Testimonial -->
+    <section id="about" class="section">
+      <div class="container about">
+        <div>
+          <span class="chip pink">Who We Are</span>
+          <h2>A Grassroots Movement for Harm Reduction</h2>
+          <p class="meta">
+            Naloxone Advocates Plymouth CIC is a community-led organisation committed to reducing the harms associated
+            with substance use. We believe everyone deserves safety, dignity, and access to life‑saving information —
+            no judgement, no barriers, just support.
+          </p>
+          #Read Our Story</a>
+        </div>
+        <div class="testi">
+          <p>“This organisation saved my life. The training was non‑judgemental, practical, and gave me the confidence to help others in my community.”</p>
+          <div class="meta">— Community Member</div>
         </div>
       </div>
+    </section>
 
-      <div class="emergency mt-20">
-        <strong>In an emergency</strong><br />
-        Always call emergency services first. Naloxone is a temporary measure — professional medical help is essential.
+    <!-- Programs -->
+    <section class="section programs">
+      <div class="container">
+        <div class="banner-green"><h2 class="no-m center">Free Naloxone Training Programs</h2></div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="title">Community Training</div>
+            <p class="meta">Learn to recognise overdose signs and respond safely.</p>
+            #Learn More</a>
+          </div>
+          <div class="card">
+            <div class="title">Peer‑to‑Peer (P2P)</div>
+            <p class="meta">Lived‑experience led sessions building community confidence.</p>
+            <a classore</a>
+          </div>
+          <div class="card">
+            <div class="title">Organisational Training</div>
+            <p class="meta">For workplaces, services and community groups.</p>
+            #Learn More</a>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <!-- How to get Naloxone -->
+    <section id="how" class="section steps">
+      <div class="container">
+        <h2>How to Get Naloxone</h2>
+        <div class="grid-2">
+          <div class="card step one">
+            <div class="title">1. Book Free Training</div>
+            <p>Attend one of our free sessions. Learn overdose recognition, naloxone use, and responder skills.</p>
+            <a class="btn yellow" href="#training</div>
+          <div class="card step two">
+            <div class="title">2. Get Your Kit</div>
+            <p>Receive your free naloxone kit at the end of training. Leave confident and prepared.</p>
+            <aet a Kit</a>
+          </div>
+        </div>
+        <div class="emergency"><strong>In an Emergency:</strong> Always call 999. Naloxone is temporary — professional medical help is essential.</div>
+      </div>
+    </section>
+
+    <!-- Volunteer gradient -->
+    <section id="volunteer" class="vol">
+      <div class="container">
+        <h2 class="center no-m">Join Our Community</h2>
+        <div class="grid-4">
+          <div class="card"><div class="title">Peer Trainer</div><p class="meta">Help deliver training with lived experience.</p>#Learn More</a></div>
+          <div class="card"><div class="title">Outreach Volunteer</div><p class="meta">Support outreach and engagement.</p><a class="btna></div>
+          <div class="card"><div class="title">Event Support</div><p class="meta">Assist at events and workshops.</p>#Learn More</a></div>
+          <div class="card"><div class="title">Behind the Scenes</div><p class="meta">Admin, planning, comms and logistics.</p><aearn More</a></div>
+        </div>
+        <div class="center-row"><aign Up to Volunteer</a></div>
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section id="resources" class="section res">
+      <div class="container">
+        <span class="chip green">Free Resources</span>
+        <h2>Download Our Harm Reduction Resources</h2>
+        <div class="grid-3">
+          <div class="card"><div class="title">Overdose Response Guide</div><p class="meta">Recognise and respond effectively.</p><a class="btn primary">
+          <div class="card"><div class="title">Naloxone Administration</div><p class="meta">Step‑by‑step instructions.</p><a classd PDF</a></div>
+          <div class="card"><div class="title">Harm Reduction Poster</div><p class="meta">Awareness and education.</p><a classd PDF</a></div>
+        </div>
+        <div class="center-row"><a class="btn pink"</a></div>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="section news">
+      <div class="container">
+        <h2>News &amp; Announcements</h2>
+        <div class="grid-3">
+          <div class="card"><div class="title">Plymouth Council Partners with Naloxone Advocates</div><p class="meta">Expanding access to life‑saving training across the city.</p>#Read full story</a></div>
+          <div class="card"><div class="title">New Peer Training Programme Launches</div><p class="meta">Lived‑experience‑led support series is now open for sign‑ups.</p><a class="</a></div>
+          <div class="card"><div class="title">Harm Reduction Walk Expands Across Devon</div><p class="meta">A community‑driven event raising awareness and connection.</p>#Read more</a></div>
+        </div>
+        <div class="center-row"><a classl News</a></div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="center no-m">Community Voices</h2>
+        <div class="grid-3">
+          <div class="card"><div class="title">Sarah J.</div><p>“The training gave me confidence to respond during an emergency.”</p><div class="stars">★★★★★</div></div>
+          <div class="card"><div class="title">Lee T.</div><p>“Supportive, community‑focused, and judgement‑free.”</p><div class="stars">★★★★★</div></div>
+          <div class="card"><div class="title">Naomi F.</div><p>“Life‑changing knowledge. Everyone should attend.”</p><div class="stars">★★★★★</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gradient CTA -->
+    <section class="cta">
+      <div class="container center">
+        <h2>Ready to Make a Difference?</h2>
+        <div class="cta-row">
+          <a class="btnTrained</a>
+          <a class="btnct Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container cols">
+      <div>
+        <div class="brand mb">Naloxone Advocates</div>
+        <p class="meta">Creating safer communities through free training and harm reduction.</p>
+      </div>
+      <div><strong>Quick Links</strong><br/><arainingTraining</a><br/>#resourcesResources</a></div>
+      <div><strong>Get Help</strong><br/>Email: info@example.org<br/>Emergency: 999</div>
+      <div><strong>Stay Connected</strong><br/>Twitter • Facebook • Instagram</div>
     </div>
+    <div class="container banner-bottom">NALOXONE SAVES LIVES</div>
+  </footer>
+
+  <!-- Slide-out Cart Drawer -->
+  <aside id="cartDrawer" class="drawer">
+    <div class="drawer-header"><strong>Your Cart</strong><button id="closeCart" aria-label="Close">×</button></div>
+    <div id="cartItems"></div>
+    <div class="drawer-footer"><button id="toCheckout" class="btn pink">Go to Checkout</button></div>
+  </aside>
+
+  <!-- Checkout section -->
+  <section id="checkout" class="checkout hidden container">
+    <h2>Checkout</h2>
+    <form id="checkoutForm">
+      <div class="grid-2">
+        <div>
+          <label>Full name<input name="name" required/></label>
+          <label>Email<input name="email" type="email" required/></label>
+          <label>Phone<input name="phone"/></label>
+        </div>
+        <div>
+          <label>Notes / Access needs<textarea name="notes" rows="5"></textarea></label>
+          <div class="summary"><strong>Booking summary</strong><ul id="summaryList"></ul></div>
+        </div>
+      </div>
+      <button class="btn pink" type="submit">Confirm Booking</button>
+      <div id="checkoutMsg" class="msg" role="status" aria-live="polite"></div>
+    </form>
   </section>
 
-  <!-- JOIN OUR COMMUNITY -->
-  <section class="section band-purple">
-    <div class="container center">
-      <h2>Join Our Community</h2>
-
-      <div class="cards two mt-20">
-        <article class="card vol">
-          <div class="icon-circle yellow">🧑‍🏫</div>
-          <h3>Peer Trainer</h3>
-          <p class="muted-dark">Share your lived experience and help train others in your community. Full training and ongoing support provided.</p>
-          <a class="link" href="/volunteer.html">Learn More →</a>
-        </article>
-
-        <article class="card vol">
-          <div class="icon-circle green">📍</div>
-          <h3>Outreach Volunteer</h3>
-          <p class="muted-dark">Help us reach people in the community who need naloxone. Distribute kits and information at events and on the streets.</p>
-          <a class="link" href="/volunteer.html">Learn More →</a>
-        </article>
-
-        <article class="card vol">
-          <div class="icon-circle pink">📅</div>
-          <h3>Event Support</h3>
-          <p class="muted-dark">Help at community events, awareness campaigns, and fundraising activities. Flexible commitment options available.</p>
-          <a class="link" href="/volunteer.html">Learn More →</a>
-        </article>
-
-        <article class="card vol">
-          <div class="icon-circle blue">💻</div>
-          <h3>Behind the Scenes</h3>
-          <p class="muted-dark">Support with admin, social media, design, or other skills. Work remotely or in-person based on your availability.</p>
-          <a class="link" href="/volunteer.html">Learn More →</a>
-        </article>
-      </div>
-
-      <div class="mt-20">
-        <a class="btn btn-yellow" href="/volunteer.html">Sign Up to Volunteer</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- RESOURCES -->
-  <section class="section">
-    <div class="container center">
-      <div class="tag tag-pill">Free Resources</div>
-      <h2 class="mt-12">Download Our Harm Reduction Resources</h2>
-
-      <div class="cards three mt-20">
-        <article class="card resource r-yellow">
-          <div class="resource-top">📄</div>
-          <h3>Overdose Response Guide</h3>
-          <p class="muted">Step-by-step instructions for responding to an opioid overdose.</p>
-          <a class="link" href="/resources.html">Download PDF</a>
-        </article>
-
-        <article class="card resource r-blue">
-          <div class="resource-top">🧰</div>
-          <h3>Naloxone Administration</h3>
-          <p class="muted">Visual guide to administering naloxone nasal spray.</p>
-          <a class="link" href="/resources.html">Download PDF</a>
-        </article>
-
-        <article class="card resource r-pink">
-          <div class="resource-top">❤️</div>
-          <h3>Harm Reduction Poster</h3>
-          <p class="muted">Community awareness poster for public spaces.</p>
-          <a class="link" href="/resources.html">Download PDF</a>
-        </article>
-      </div>
-
-      <!-- IMPORTANT: Yellow button (you asked for this) -->
-      <div class="mt-20">
-        <a class="btn btn-yellow" href="/resources.html">View All Resources →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- NEWS -->
-  <section class="section" id="news">
-    <div class="container center">
-      <div class="tag tag-pill">Latest Updates</div>
-      <h2 class="mt-12">News &amp; Announcements</h2>
-      <p class="muted">Stay informed about our latest initiatives, events, and community impact</p>
-
-      <div class="news-grid mt-20">
-        <article class="card news big">
-          <div class="news-img"></div>
-          <div class="news-body lime">
-            <div class="news-meta"><span class="tag tag-mini">Partnership</span> <span class="muted">28 Jan 2025</span></div>
-            <h3>Plymouth Council Partners with Naloxone Advocates for City-Wide Training</h3>
-            <p class="muted">A new partnership will see naloxone training offered at all community centres across Plymouth…</p>
-            <a class="link" href="/news.html">Read Full Story →</a>
-          </div>
-        </article>
-
-        <article class="card news">
-          <div class="news-thumb"></div>
-          <div class="news-body">
-            <div class="news-meta"><span class="tag tag-mini">Milestone</span> <span class="muted">20 Jan 2025</span></div>
-            <h3>150 Lives Saved: Celebrating Our Community Impact</h3>
-            <a class="link" href="/news.html">Read More →</a>
-          </div>
-        </article>
-
-        <article class="card news">
-          <div class="news-thumb"></div>
-          <div class="news-body">
-            <div class="news-meta"><span class="tag tag-mini">Programme</span> <span class="muted">15 Jan 2025</span></div>
-            <h3>New Peer Trainer Programme Launches This Spring</h3>
-            <a class="link" href="/news.html">Read More →</a>
-          </div>
-        </article>
-
-        <article class="card news wide">
-          <div class="news-thumb"></div>
-          <div class="news-body">
-            <div class="news-meta"><span class="tag tag-mini">Events</span> <span class="muted">8 Jan 2025</span></div>
-            <h3>Harm Reduction Week: Events Across Devon</h3>
-            <p class="muted">Join us for a week of awareness events, training sessions, and community gatherings…</p>
-          </div>
-        </article>
-      </div>
-
-      <div class="mt-20">
-        <a class="btn btn-yellow" href="/news.html">View All News →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMMUNITY VOICES -->
-  <section class="section band-blue">
-    <div class="container center">
-      <h2>Community Voices</h2>
-
-      <div class="cards two mt-20">
-        <article class="card">
-          <div class="review-head">
-            <span class="badge yellow">SH</span>
-            <div>
-              <strong>Sarah H.</strong>
-              <div class="muted">Peer Trainer</div>
-            </div>
-          </div>
-          <p>“Being part of this organisation has given me purpose. The training was clear, compassionate, and empowering.”</p>
-          <div class="stars">★★★★★</div>
-        </article>
-
-        <article class="card">
-          <div class="review-head">
-            <span class="badge green">LT</span>
-            <div>
-              <strong>Lisa T.</strong>
-              <div class="muted">Outreach Volunteer</div>
-            </div>
-          </div>
-          <p>“The peer-led approach means we’re helping our own community, and that makes all the difference.”</p>
-          <div class="stars">★★★★★</div>
-        </article>
-
-        <article class="card">
-          <div class="review-head">
-            <span class="badge pink">DM</span>
-            <div>
-              <strong>David M.</strong>
-              <div class="muted">Community Member</div>
-            </div>
-          </div>
-          <p>“No judgement — just practical information that could save a life. Everyone should do this training.”</p>
-          <div class="stars">★★★★★</div>
-        </article>
-
-        <article class="card">
-          <div class="review-head">
-            <span class="badge blue">RC</span>
-            <div>
-              <strong>Robert C.</strong>
-              <div class="muted">Family Member</div>
-            </div>
-          </div>
-          <p>“This training gave me the tools and confidence. I can’t thank this team enough.”</p>
-          <div class="stars">★★★★★</div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- READY -->
-  <section class="section band-lime">
-    <div class="container center">
-      <h2>Ready to Make a Difference?</h2>
-      <p class="muted">Join us in saving lives and building a safer, more compassionate community</p>
-
-      <div class="actions mt-20">
-        <a class="btn btn-pink" href="/training.html">Get Trained →</a>
-        <a class="btn btn-outline" href="/contact.html">Contact Us →</a>
-      </div>
-
-      <div class="social mt-20">
-        <a class="social-btn" href="#" aria-label="Phone">📞</a>
-        <a class="social-btn" href="#" aria-label="Email">✉️</a>
-        <a class="social-btn" href="#" aria-label="Facebook">f</a>
-        <a class="social-btn" href="#" aria-label="Instagram">◎</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <div class="brand footer-brand">
-        <span class="brand-dot"></span>
-        <span class="brand-text">
-        </span>
-      </div>
-      <p class="muted footer-muted">
-        Grassroots, peer-led harm reduction. Training, kits, and community support in Plymouth &amp; Devon.
-      </p>
-    </div>
-
-    <div>
-      <h4>Quick Links</h4>
-      <div class="footer-links">
-        <a href="/training.html">Training</a>
-        <a href="/get-naloxone.html">Get Naloxone</a>
-        <a href="/volunteer.html">Volunteer</a>
-        <a href="/resources.html">Resources</a>
-      </div>
-    </div>
-
-    <div>
-      <h4>Newsletter</h4>
-      <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="footer-form">
-        <input type="hidden" name="form-name" value="newsletter" />
-        <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
-        <input name="email" placeholder="Your email" />
-        <button class="btn btn-pink btn-sm" type="submit">Subscribe</button>
-      </form>
-    </div>
-  </div>
-
-  <div class="container footer-bottom">
-    <!-- IMPORTANT: Bigger yellow badge -->
-    <span class="badge badge-big">NALOXONE SAVES LIVES</span>
-    <span class="muted tiny">© 2026 Naloxone Advocates</span>
-  </div>
-</footer>
-
-<!-- MODALS (ONLY ONCE) -->
-<div class="overlay" id="overlay" aria-hidden="true"></div>
-
-<section class="modal" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
-  <div class="modal-head">
-    <h3 id="cartTitle">Your Booking Cart</h3>
-    <div class="modal-head-actions">
-      <button class="btn btn-outline btn-sm" id="clearCartBtn">Clear</button>
-      <button class="icon-btn" id="closeCartBtn" aria-label="Close">✕</button>
-    </div>
-  </div>
-
-  <div class="modal-body two-col">
-    <div>
-      <div id="cartEmpty" class="empty">Your cart is empty. Add a training session to book.</div>
-      <div id="cartList" class="cart-list"></div>
-    </div>
-
-    <aside class="summary">
-      <div class="row"><span class="muted">Items</span><span id="sumItems">0</span></div>
-      <div class="row"><span class="muted">Subtotal</span><span id="sumSubtotal">£0.00</span></div>
-      <div class="row"><span class="muted">Fees</span><span id="sumFees">£0.00</span></div>
-      <div class="row total"><span>Total</span><span id="sumTotal">£0.00</span></div>
-
-      <button class="btn btn-pink btn-full" id="checkoutBtn">Proceed to Checkout</button>
-      <button class="btn btn-outline btn-full" id="continueBtn">Continue browsing</button>
-
-      <p class="tiny muted mt-10">
-        Checkout submits to Netlify Forms + Google Sheets (if enabled).
-      </p>
-    </aside>
-  </div>
-</section>
-
-<section class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" aria-hidden="true">
-  <div class="modal-head">
-    <h3 id="checkoutTitle">Checkout</h3>
-    <button class="icon-btn" id="closeCheckoutBtn" aria-label="Close">✕</button>
-  </div>
-
-  <div class="modal-body">
-    <div class="checkout" id="checkoutFormWrap">
-      <div class="field">
-        <label for="name">Full name</label>
-        <input id="name" placeholder="Jane Doe" />
-      </div>
-      <div class="field">
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="jane@example.com" />
-      </div>
-      <div class="field">
-        <label for="phone">Phone (optional)</label>
-        <input id="phone" placeholder="07123 456789" />
-      </div>
-      <div class="field">
-        <label for="notes">Notes</label>
-        <textarea id="notes" placeholder="Access needs, etc."></textarea>
-      </div>
-
-      <div class="actions">
-        <button class="btn btn-pink" id="placeBookingBtn">Place booking</button>
-        <button class="btn btn-outline" id="backToCartBtn" type="button">Back to cart</button>
-      </div>
-
-      <div class="success" id="checkoutSuccess">
-        ✅ Booking placed! Check Netlify → Forms (“booking”), and Google Sheets if connected.
-      </div>
-    </div>
-  </div>
-</section>
-
-<form name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="hidden" aria-hidden="true">
-  <input type="hidden" name="form-name" value="booking" />
-  <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
-  <input name="order_id" />
-  <input name="createdAt" />
-  <input name="name" />
-  <input name="email" />
-  <input name="phone" />
-  <textarea name="notes"></textarea>
-  <textarea name="items"></textarea>
-  <textarea name="totals"></textarea>
-</form>
-
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-<script src="/js/app.js"></script>
-</body>
-</html>
+  <!-- Your Apps Script endpoint -->
+  <script>
+    const ENDPOINT = 'https://script.google.com/macros/s/AKfycbyckpp9ACxXNftfL0lHp5lIXq1axq-VF_XG3xzaadjvre_ee_Qa2DU0baBlyg-YYLWIHQ/exec';
+  </script>
+  <script src="script.js" deferhtml>
 
 
 
